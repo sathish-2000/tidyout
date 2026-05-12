@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tidyout-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "CLI wrapper that compresses command output for AI agents, reducing token usage by 60-97%"
 readme = "README.md"
 requires-python = ">=3.9"

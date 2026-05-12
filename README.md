@@ -61,11 +61,14 @@ Running `tidy init` in your project directory automatically tells your AI agent 
 tidy init
 ```
 
-It detects which config file to update:
+It writes to **all** major AI agent config files at once — creating missing ones and appending to existing ones:
 
-- `CLAUDE.md` exists → appends tidyout usage rules
-- `.cursorrules` exists → appends tidyout usage rules
-- Neither exists → creates `CLAUDE.md` with the rules
+| File | AI tool |
+|---|---|
+| `CLAUDE.md` | Claude Code |
+| `.cursorrules` | Cursor |
+| `.windsurfrules` | Windsurf |
+| `.github/copilot-instructions.md` | GitHub Copilot |
 
 Injected block:
 
