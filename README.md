@@ -11,7 +11,7 @@ Built for AI coding sessions (Claude Code, Cursor, Copilot) where terminal outpu
 ## Install
 
 ```bash
-pip install tidyout
+pip install tidyout-cli
 ```
 
 ## Usage
