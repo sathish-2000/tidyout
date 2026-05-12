@@ -1,0 +1,23 @@
+strip:
+  - pattern: "/.git/"
+    type: contains
+  - pattern: "^\\.git"
+    type: regex
+  - pattern: "/node_modules/"
+    type: contains
+  - pattern: "node_modules/"
+    type: prefix
+  - pattern: "/__pycache__/"
+    type: contains
+  - pattern: "__pycache__/"
+    type: prefix
+  - pattern: "/\\.git$"
+    type: regex
+  - pattern: "node_modules$"
+    type: regex
+  - pattern: "__pycache__$"
+    type: regex
+  - pattern: "\\.pyc$"
+    type: regex
+
+keep: []

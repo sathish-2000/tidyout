@@ -1,0 +1,31 @@
+strip:
+  - pattern: "Your branch is"
+    type: prefix
+  - pattern: "^  \\(use \""
+    type: regex
+  - pattern: "nothing to commit"
+    type: prefix
+  - pattern: "no changes added"
+    type: prefix
+  - pattern: "Changes not staged"
+    type: prefix
+  - pattern: "Changes to be committed"
+    type: prefix
+  - pattern: "Untracked files:"
+    type: prefix
+  - pattern: "^$"
+    type: regex
+
+keep:
+  - pattern: "On branch "
+    type: prefix
+  - pattern: "modified:"
+    type: contains
+  - pattern: "deleted:"
+    type: contains
+  - pattern: "new file:"
+    type: contains
+  - pattern: "renamed:"
+    type: contains
+  - pattern: "both modified:"
+    type: contains

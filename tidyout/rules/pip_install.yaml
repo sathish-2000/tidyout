@@ -1,0 +1,35 @@
+strip:
+  - pattern: "Collecting "
+    type: prefix
+  - pattern: "  Downloading "
+    type: prefix
+  - pattern: "Requirement already satisfied:"
+    type: prefix
+  - pattern: "  Already satisfied:"
+    type: prefix
+  - pattern: "Building wheels"
+    type: prefix
+  - pattern: "  Building wheel"
+    type: prefix
+  - pattern: "  Created wheel"
+    type: prefix
+  - pattern: "Stored in directory"
+    type: prefix
+  - pattern: "Installing collected packages:"
+    type: prefix
+  - pattern: "WARNING: You are using pip version"
+    type: contains
+  - pattern: "You should consider upgrading"
+    type: contains
+  - pattern: "━"
+    type: contains
+  - pattern: "^\\s*$"
+    type: regex
+
+keep:
+  - pattern: "Successfully installed"
+    type: prefix
+  - pattern: "ERROR"
+    type: prefix
+  - pattern: "error:"
+    type: prefix

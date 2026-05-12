@@ -1,0 +1,33 @@
+strip:
+  - pattern: "  ✓ "
+    type: prefix
+  - pattern: "  ✔ "
+    type: prefix
+  - pattern: "  ✅ "
+    type: prefix
+  - pattern: " PASS "
+    type: contains
+  - pattern: "^\\s*$"
+    type: regex
+
+keep:
+  - pattern: " FAIL "
+    type: contains
+  - pattern: "  ✕ "
+    type: prefix
+  - pattern: "  ✗ "
+    type: prefix
+  - pattern: "  ● "
+    type: prefix
+  - pattern: "Tests:"
+    type: contains
+  - pattern: "Test Suites:"
+    type: contains
+  - pattern: "Snapshots:"
+    type: contains
+  - pattern: "Time:"
+    type: contains
+  - pattern: "FAIL "
+    type: contains
+  - pattern: "expect("
+    type: contains

@@ -1,0 +1,41 @@
+strip:
+  - pattern: "collecting "
+    type: prefix
+  - pattern: "platform "
+    type: prefix
+  - pattern: "rootdir:"
+    type: prefix
+  - pattern: "plugins:"
+    type: prefix
+  - pattern: "cacheprovider"
+    type: prefix
+  - pattern: " PASSED$"
+    type: regex
+  - pattern: " PASSED "
+    type: contains
+  - pattern: "^={10,}$"
+    type: regex
+  - pattern: "^-{10,}$"
+    type: regex
+
+keep:
+  - pattern: "FAILED"
+    type: contains
+  - pattern: "ERROR"
+    type: contains
+  - pattern: " passed"
+    type: contains
+  - pattern: " failed"
+    type: contains
+  - pattern: " error"
+    type: contains
+  - pattern: "warning"
+    type: contains
+  - pattern: "short test summary"
+    type: contains
+  - pattern: "^FAILED "
+    type: regex
+  - pattern: "^E "
+    type: regex
+  - pattern: "^>"
+    type: regex

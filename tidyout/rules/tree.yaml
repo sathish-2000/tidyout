@@ -1,0 +1,11 @@
+strip:
+  - pattern: "node_modules"
+    type: contains
+  - pattern: "\\.git"
+    type: contains
+  - pattern: "__pycache__"
+    type: contains
+  - pattern: "\\.pyc"
+    type: contains
+
+keep: []

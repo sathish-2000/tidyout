@@ -1,0 +1,5 @@
+strip:
+  - pattern: "^$"
+    type: regex
+
+keep: []

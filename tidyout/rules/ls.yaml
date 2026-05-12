@@ -1,0 +1,6 @@
+strip:
+  - pattern: "total "
+    type: prefix
+  - pattern: "^$"
+    type: regex
+keep: []

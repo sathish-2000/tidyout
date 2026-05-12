@@ -1,0 +1,19 @@
+strip:
+  - pattern: "   Downloading "
+    type: prefix
+  - pattern: "   Downloaded "
+    type: prefix
+  - pattern: "    Updating "
+    type: prefix
+  - pattern: "     Locking "
+    type: prefix
+
+keep:
+  - pattern: "^warning"
+    type: regex
+  - pattern: "^error"
+    type: regex
+  - pattern: "    Finished"
+    type: prefix
+  - pattern: "   Compiling "
+    type: prefix

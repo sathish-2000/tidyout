@@ -1,0 +1,9 @@
+strip:
+  - pattern: "Entering directory"
+    type: contains
+  - pattern: "Leaving directory"
+    type: contains
+  - pattern: "^make\\[\\d+\\]"
+    type: regex
+
+keep: []

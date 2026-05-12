@@ -1,0 +1,15 @@
+strip:
+  - pattern: "Author: "
+    type: prefix
+  - pattern: "Merge: "
+    type: prefix
+  - pattern: "^$"
+    type: regex
+
+keep:
+  - pattern: "commit "
+    type: prefix
+  - pattern: "Date:"
+    type: prefix
+  - pattern: "    "
+    type: prefix

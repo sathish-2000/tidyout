@@ -1,0 +1,19 @@
+strip:
+  - pattern: "health_check\\|"
+    type: regex
+  - pattern: "healthcheck"
+    type: contains
+
+keep:
+  - pattern: "ERROR"
+    type: contains
+  - pattern: "WARN"
+    type: contains
+  - pattern: "FATAL"
+    type: contains
+  - pattern: "Exception"
+    type: contains
+  - pattern: "Traceback"
+    type: contains
+  - pattern: "panic:"
+    type: contains

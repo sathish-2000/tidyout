@@ -1,0 +1,23 @@
+strip:
+  - pattern: "npm warn"
+    type: prefix
+  - pattern: "npm notice"
+    type: prefix
+  - pattern: "^\\s*$"
+    type: regex
+
+keep:
+  - pattern: "added "
+    type: contains
+  - pattern: "removed "
+    type: contains
+  - pattern: "changed "
+    type: contains
+  - pattern: "audited "
+    type: contains
+  - pattern: "vulnerabilit"
+    type: contains
+  - pattern: "found 0 vulnerabilities"
+    type: contains
+  - pattern: "npm error"
+    type: prefix
